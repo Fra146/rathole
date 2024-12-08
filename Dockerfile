@@ -14,4 +14,4 @@ FROM gcr.io/distroless/cc-debian12
 WORKDIR /app
 COPY --from=builder /home/rust/src/build-out/rathole .
 USER 1000:1000
-ENTRYPOINT ["./rathole /app/config.toml"]
+ENTRYPOINT ["rathole /app/config.toml"]
